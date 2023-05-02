@@ -13,7 +13,9 @@ export const recipesApi = createApi({
   endpoints: builder => ({
     getRecipes: builder.query<Response, SearchParams>({
       query: ({ query = '', calories = 0 }) =>
-        `recipes/v2?app_id=${process.env.REACT_APP_API_ID}&app_key=${process.env.REACT_APP_API_KEY}&type=any&q=${query}`,
+        `recipes/v2?app_id=${process.env.REACT_APP_API_ID}&app_key=${
+          process.env.REACT_APP_API_KEY
+        }&type=any&q=${query}${calories ? `&calories=${calories}` : ''}`,
     }),
   }),
 });
