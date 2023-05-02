@@ -4,6 +4,7 @@ import { Route, Routes } from 'react-router';
 import { UserRecipes } from './features/recipes/UserRecipes';
 import { UserRecipeList } from './features/recipes/UserRecipeList';
 import { SearchPage } from './features/recipes/SearchPage';
+import { ErrorPage } from './components/ErrorPage/ErrorPage';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path='/' element={<SearchPage />} />
           <Route path='my-recipes' element={<UserRecipeList />} />
           <Route path='create-recipe' element={<UserRecipes />} />
+          <Route path='*' element={<ErrorPage />} />
         </Routes>
       </Grid>
     </Grid>
