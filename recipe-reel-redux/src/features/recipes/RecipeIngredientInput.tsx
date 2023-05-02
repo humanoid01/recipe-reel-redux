@@ -1,9 +1,11 @@
-import TextField from '@mui/material/TextField/TextField';
-import Select from '@mui/material/Select/Select';
-import MenuItem from '@mui/material/MenuItem/MenuItem';
 import Box from '@mui/material/Box/Box';
+import MenuItem from '@mui/material/MenuItem/MenuItem';
+import Select from '@mui/material/Select/Select';
+import TextField from '@mui/material/TextField/TextField';
+
 import { TotalItem } from '../../types/types';
 import { memo } from 'react';
+
 interface RecipeIngredientInputProps {
   name: string;
   value: TotalItem;

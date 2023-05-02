@@ -1,14 +1,20 @@
-import { Box, Dialog, DialogTitle, CardActions } from '@mui/material';
-import { useState } from 'react';
+import Box from '@mui/material/Box';
+import CardActions from '@mui/material/CardActions';
+import Dialog from '@mui/material/Dialog';
+import DialogTitle from '@mui/material/DialogTitle';
+
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import HeartBrokenIcon from '@mui/icons-material/HeartBroken';
 import IconButton from '@mui/material/IconButton';
 import DeleteIcon from '@mui/icons-material/Delete';
 import EditIcon from '@mui/icons-material/Edit';
+
 import { useAppDispatch, useAppSelector } from '../../app/hooks';
 import { addFavorite, deleteFavorite, deleteRecipe } from './recipesSlice';
 import { Recipe } from '../../types/types';
 import { UserRecipeModal } from './UserRecipeModal';
+
+import { useState } from 'react';
 
 interface RecipeCardActionsProps {
   recipe: Recipe;

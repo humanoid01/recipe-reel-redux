@@ -1,14 +1,17 @@
-import { Box, Typography, Divider } from '@mui/material';
+import Box from '@mui/material/Box';
+import Typography from '@mui/material/Typography';
+import Divider from '@mui/material/Divider';
+
 import { useGetRecipesQuery } from './recipesApi';
-import { useDebounce, useSearchQuery } from '../../app/hooks';
 import { RecipesFilters } from './RecipeFilters';
 import { RecipeList } from './RecipeList';
 import { LinearProgress } from '@mui/material';
+import { useDebounce, useSearchQuery } from '../../app/hooks';
 import { isFetchBaseQueryError } from '../../utils/isFetchBaseQueryError';
+
 export const SearchPage = () => {
   const [query, setQuery] = useSearchQuery('q');
   const [calories, setCalories] = useSearchQuery('calories');
-
   const debouncedQuery = useDebounce(query, 1000);
   const debouncedCalories = useDebounce(calories, 1000);
 

@@ -1,7 +1,11 @@
-import { Box, Button, Typography } from '@mui/material';
+import Box from '@mui/material/Box';
+import Button from '@mui/material/Button';
+import Typography from '@mui/material/Typography';
+
+import AddCircleOutlineSharpIcon from '@mui/icons-material/AddCircleOutlineSharp';
+
 import { useAppSelector } from '../../app/hooks';
 import { RecipeCard } from './RecipeCard';
-import AddCircleOutlineSharpIcon from '@mui/icons-material/AddCircleOutlineSharp';
 import { useNavigate } from 'react-router';
 
 export const UserRecipeList = () => {

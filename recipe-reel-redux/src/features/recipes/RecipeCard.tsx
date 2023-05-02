@@ -1,11 +1,10 @@
 import { Recipe } from '../../types/types';
-import {
-  Card,
-  CardHeader,
-  CardMedia,
-  useTheme,
-  useMediaQuery,
-} from '@mui/material';
+import Card from '@mui/material/Card';
+import CardHeader from '@mui/material/CardHeader';
+import CardMedia from '@mui/material/CardMedia';
+
+import useMediaQuery from '@mui/material/useMediaQuery';
+import { useTheme } from '@mui/material';
 
 import noImage from '../../assets/no-image.jpg';
 

@@ -1,16 +1,17 @@
-import { useState } from 'react';
-import {
-  Box,
-  TextField,
-  Collapse,
-  IconButton,
-  Typography,
-} from '@mui/material';
+import Box from '@mui/material/Box';
+import Collapse from '@mui/material/Collapse';
+import IconButton from '@mui/material/IconButton';
+import Typography from '@mui/material/Typography';
+import TextField from '@mui/material/TextField';
+
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import { ExpandMore } from '../../components/ExpandMore/ExpandMore';
 import ControlPointIcon from '@mui/icons-material/ControlPoint';
 import RemoveCircleOutlineIcon from '@mui/icons-material/RemoveCircleOutline';
+
+import { ExpandMore } from '../../components/ExpandMore/ExpandMore';
 import { Ingredient } from '../../types/types';
+import { useState } from 'react';
+
 interface MyRecipesIngredientLinesProps {
   ingredients: Ingredient[];
   setIngredients: (ingredients: Ingredient[]) => void;

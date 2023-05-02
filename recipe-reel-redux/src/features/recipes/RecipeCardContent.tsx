@@ -1,4 +1,8 @@
-import { CardActionArea, CardContent, Typography, Link } from '@mui/material';
+import CardActionArea from '@mui/material/CardActionArea/CardActionArea';
+import CardContent from '@mui/material/CardContent/CardContent';
+import Typography from '@mui/material/Typography/Typography';
+import Link from '@mui/material/Link/Link';
+
 import { Recipe } from '../../types/types';
 
 interface RecipeCardContentProps {

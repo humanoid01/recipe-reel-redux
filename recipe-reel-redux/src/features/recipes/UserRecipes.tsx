@@ -1,14 +1,17 @@
-import { useState, useCallback } from 'react';
-import { useAppDispatch } from '../../app/hooks';
+import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
-import { Box, Grid, TextField, Divider } from '@mui/material';
+import Divider from '@mui/material/Divider';
+import Grid from '@mui/material/Grid';
+import TextField from '@mui/material/TextField';
+
+import RestaurantTwoToneIcon from '@mui/icons-material/RestaurantTwoTone';
 
 import { addRecipe } from './recipesSlice';
 import { RecipeTotalsAccordion } from './RecipeTotalsAccordion';
 import { UserEditableIngredientList } from './UserEditableIngredientList';
-import RestaurantTwoToneIcon from '@mui/icons-material/RestaurantTwoTone';
-
 import { Ingredient, TotalItem, TotalNutrients } from '../../types/types';
+import { useAppDispatch } from '../../app/hooks';
+import { useState, useCallback } from 'react';
 
 export const UserRecipes = () => {
   const [recipeName, setRecipeName] = useState<string>('');

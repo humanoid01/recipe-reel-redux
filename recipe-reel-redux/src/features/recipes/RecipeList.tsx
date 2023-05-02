@@ -1,7 +1,9 @@
-import { Grid } from '@mui/material';
+import Grid from '@mui/material/Grid';
+
 import { Response } from '../../types/types';
-import { memo } from 'react';
 import { RecipeCard } from './RecipeCard';
+
+import { memo } from 'react';
 
 interface RecipeListProps {
   data: Response;

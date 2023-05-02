@@ -1,4 +1,8 @@
-import { Box, TextField, useMediaQuery, useTheme } from '@mui/material';
+import Box from '@mui/material/Box';
+import TextField from '@mui/material/TextField';
+import useMediaQuery from '@mui/material/useMediaQuery';
+import useTheme from '@mui/material/styles/useTheme';
+
 import { useState } from 'react';
 
 interface RecipeFiltersProps {

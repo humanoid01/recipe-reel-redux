@@ -1,9 +1,13 @@
-import { useState } from 'react';
-import { Box, Collapse, Typography } from '@mui/material';
+import Box from '@mui/material/Box';
+import Collapse from '@mui/material/Collapse';
+import Typography from '@mui/material/Typography';
+
 import { ExpandMoreButton } from '../../components/ExpandMore/ExpandMore';
 import { IngredientList } from './IngredientList';
 import { NutrientList } from './NutrientList';
 import { Recipe } from '../../types/types';
+
+import { useState } from 'react';
 
 interface RecipeCardButtonsProps {
   recipe: Recipe;

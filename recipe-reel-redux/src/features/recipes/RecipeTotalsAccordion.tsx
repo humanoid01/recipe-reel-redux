@@ -1,9 +1,14 @@
-import { useState } from 'react';
-import { Collapse, Grid, Typography } from '@mui/material';
+import Typography from '@mui/material/Typography';
+import Collapse from '@mui/material/Collapse';
+import Grid from '@mui/material/Grid';
+
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+
 import { ExpandMore } from '../../components/ExpandMore/ExpandMore';
 import { RecipeIngredientInput } from './RecipeIngredientInput';
 import { TotalDaily, TotalItem } from '../../types/types';
+
+import { useState } from 'react';
 
 interface RecipeTotalsAccordionProps {
   totals: TotalDaily;

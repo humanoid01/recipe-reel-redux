@@ -1,5 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit';
 import { Recipe } from '../../types/types';
+
 interface RecipesState {
   userRecipes: { [key: string]: Recipe };
   favorites: { [key: string]: Recipe };
