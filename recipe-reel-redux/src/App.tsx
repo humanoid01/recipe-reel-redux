@@ -1,10 +1,12 @@
-import { Grid } from '@mui/material';
-import { Sidebar } from './components/Sidebar/Sidebar';
-import { Route, Routes } from 'react-router';
+import Grid from '@mui/material/Grid';
+
 import { UserRecipes } from './features/recipes/UserRecipes';
 import { UserRecipeList } from './features/recipes/UserRecipeList';
 import { SearchPage } from './features/recipes/SearchPage';
+import { FavoriteItemList } from './features/recipes/FavoriteItemList';
+import { Sidebar } from './components/Sidebar/Sidebar';
 import { ErrorPage } from './components/ErrorPage/ErrorPage';
+import { Route, Routes } from 'react-router';
 
 function App() {
   return (
@@ -17,6 +19,7 @@ function App() {
           <Route path='/' element={<SearchPage />} />
           <Route path='my-recipes' element={<UserRecipeList />} />
           <Route path='create-recipe' element={<UserRecipes />} />
+          <Route path='favorites' element={<FavoriteItemList />} />
           <Route path='*' element={<ErrorPage />} />
         </Routes>
       </Grid>
